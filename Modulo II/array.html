@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad de array</title>
+</head>
+<body>
+    <script>
+//declaramos el array y le asignamos los valores
+    var posiciones = ["Andrea", "Jesús", "Laura", "Nahuel", "Mónica", "Maria", "Leandro", "Susana "];
+//Mostramos en el documento el array
+    document.write(posiciones.join("-"))
+    document.write("<br>"); document.write("<br>");
+//Eliminamos un elemento y mostramos
+    document.write("1) Debemos eliminar por ausencia a : Leandro ")
+
+    posiciones.splice(6, 1)
+    document.write("<br>");
+
+    document.write(posiciones.join("-"));
+    document.write("<br>"); document.write("<br>");
+//Agregamos dos elementos
+    document.write("2) Agregamos a dos alumnos: Roberto y Claudia")
+    document.write("<br>");
+    posiciones.splice(2, 0, "Roberto", "Claudia")
+
+    document.write(posiciones.join("-"));
+    document.write("<br>"); document.write("<br>");
+//Debemos poner a Monica antes que Nahuel
+   document.write("3) Monica ha entregado antes que Nahuel")
+   posiciones.splice(5, 1)
+   posiciones.splice(6,0, "Nahuel")
+   document.write("<br>");
+   document.write(posiciones.join("-"))
+   document.write("<br>"); document.write("<br>");
+   document.write("4) La cantidad de participantes es: " + posiciones.length)
+
+   
+
+
+    </script>
+</body>
+</html>

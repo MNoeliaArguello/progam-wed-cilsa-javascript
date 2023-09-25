@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad5</title>
+</head>
+<body>
+    <br>
+    <p>1. Crear una lista de asistencia de Alumnos de mínimo 8 items.
+
+    2. Con el método prompt() pedirle al usuario que ingrese su nombre para agregarlo a
+
+    la lista.
+
+    3. Si el Alumno ya está en la lista (método: array.includes()) avisarle al usuario que
+
+      su nombre ya está incluido.
+
+    4. Si no, agregar el nombre a la lista y mostrarle al usuario la lista final con todos los
+
+     alumnos.
+
+     5. Pata imprimir la lista, utilizar un FOR, concatenando la leyenda que quieras
+    </p>
+
+    <script>
+        var alumnos = ["Rocio", "Manuel", "Elias", "Martina"]
+        var newAlum = prompt("Ingrese su nombre para la lista de asistencia")
+        if(alumnos.includes(newAlum)){
+            alert("Tu nombre ya esta en la lista")
+        } else{
+            alumnos.push(newAlum)
+            alert("Listo! Te agregamos a la lista de asistencia")
+        }
+        for (let i = 0; i < alumnos.length; i++) {
+            document.write(`<ul><li>El alumno: ${alumnos[i]} esta presente.</li></ul>`) 
+           
+        }
+
+    </script>
+</body>
+</html>
